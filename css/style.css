@@ -538,11 +538,18 @@ button {
 
 .container.footer-flex {
 	display: flex;
-	gap: 120px;
+}
+
+.footer-right {
+	margin-right: 80px;
 }
 
 .footer-right > .social-list {
 	gap: 16px;
+}
+
+.footer-left {
+	margin-right: 120px;
 }
 
 .social-link.footer-social {
@@ -556,6 +563,52 @@ button {
 .social-link.footer-social:hover,
 .social-link.footer-social:focus {
 	background-color: var(--sechover-color);
+}
+
+.flex-form {
+	display: flex;
+	gap: 24px;
+	margin-top: 16px;
+}
+
+.subscribe-input {
+	width: 264px;
+	height: 40px;
+	padding: 8px 16px;
+
+	color: rgba(255, 255, 255, 0.6);
+	background-color: var(--title-text-color);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.subscribe-btn {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	background-color: var(--accent-color);
+	color: #ffffff;
+	border-radius: 4px;
+
+	width: 165px;
+	height: 40px;
+	padding: 8px 24px;
+
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 0.84;
+	letter-spacing: 0.04em;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+	background-color: var(--btn-hover-color);
+}
+
+.subscribe-svg {
+	right: 50%;
 }
 
 /*========================== PORTFOLIO PAGE =============================*/
