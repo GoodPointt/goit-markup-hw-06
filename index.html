@@ -64,6 +64,30 @@
 								<use xlink:href="./images/icons.svg#close"></use>
 							</svg>
 						</button>
+						<h3 class="modal-header">Leave your contacts and we will call you back</h3>
+						<form class="modal-form">
+							<label for="" class="modal-label">Name</label>
+							<input type="text" class="modal-input" name="user-name" required />
+
+							<label for="" class="modal-label">Phone</label>
+							<input type="tel" class="modal-input" name="phone-nuber" required />
+
+							<label for="" class="modal-label">Email</label>
+							<input type="email" class="modal-input" name="email" required />
+
+							<label for="" class="modal-label">Comment</label>
+							<input type="text" class="modal-input" placeholder="Text input" name="comment" />
+
+							<div class="form-flex">
+								<input type="checkbox" class="modal-input-policy" name="comment" />
+								<label for="" class="modal-label-policy">
+									I accept the terms and conditions of the
+									<a class="form-link" href="">Privacy Policy</a>
+								</label>
+							</div>
+
+							<button type="submit" class="modal-btn">Send</button>
+						</form>
 					</div>
 				</div>
 				<div class="container">
@@ -482,9 +506,8 @@
 				<form class="footer-subscribe">
 					<label class="footer-text-right" for="email">Subscribe</label>
 					<div class="flex-form">
-						<div>
-							<input class="subscribe-input" id="email" type="email" name="email" placeholder="E-mail" />
-						</div>
+						<input class="subscribe-input" id="email" type="email" name="email" placeholder="E-mail" />
+
 						<button class="subscribe-btn" type="submit">
 							Subscribe
 							<svg width="24" height="24" class="subscribe-svg">
