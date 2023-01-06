@@ -66,25 +66,50 @@
 						</button>
 						<h3 class="modal-header">Leave your contacts and we will call you back</h3>
 						<form class="modal-form">
-							<label for="" class="modal-label">Name</label>
-							<input type="text" class="modal-input" name="user-name" required />
+							<label for="user-name" class="modal-label">Name</label>
+							<input
+								id="user-name"
+								type="text"
+								class="modal-input"
+								name="user-name"
+								required
+								minlength="2"
+								pattern="^[A-Za-zА-Яа-яіІїЇ]+$"
+								title="Type only letters here"
+							/>
 
-							<label for="" class="modal-label">Phone</label>
-							<input type="tel" class="modal-input" name="phone-nuber" required />
+							<label for="telephone" class="modal-label">Phone</label>
+							<input
+								type="tel"
+								class="modal-input"
+								name="telephone"
+								id="telephone"
+								required
+								pattern="[0-9]{10}"
+								title="Ten digits
+							phone number"
+								minlength="10"
+							/>
 
-							<label for="" class="modal-label">Email</label>
-							<input type="email" class="modal-input" name="email" required />
+							<label for="email" class="modal-label">Email</label>
+							<input
+								type="email"
+								class="modal-input"
+								id="email"
+								name="email"
+								required
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+								title="email@mail.com"
+							/>
 
-							<label for="" class="modal-label">Comment</label>
-							<input type="text" class="modal-input" placeholder="Text input" name="comment" />
+							<label for="comment" class="modal-label">Comment</label>
+							<textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"></textarea>
 
-							<div class="form-flex">
-								<input type="checkbox" class="modal-input-policy" name="comment" />
-								<label for="" class="modal-label-policy">
-									I accept the terms and conditions of the
-									<a class="form-link" href="">Privacy Policy</a>
-								</label>
-							</div>
+							<label for="policy" class="modal-label-policy">
+								<input type="checkbox" class="modal-input-policy" name="policy" value="policy-agree" id="policy" />
+								I accept the terms and conditions of the
+								<a class="form-link" href="">Privacy Policy</a>
+							</label>
 
 							<button type="submit" class="modal-btn">Send</button>
 						</form>
